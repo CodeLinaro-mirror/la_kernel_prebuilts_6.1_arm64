@@ -486,6 +486,7 @@ __traceiter_android_rvh_update_misfit_status	UNKNOWN
 __traceiter_android_rvh_update_rt_rq_load_avg	UNKNOWN	
 __traceiter_android_rvh_update_thermal_stats	UNKNOWN	
 __traceiter_android_rvh_util_est_update	UNKNOWN	
+__traceiter_android_rvh_util_fits_cpu	UNKNOWN	
 __traceiter_android_rvh_wake_up_new_task	UNKNOWN	
 __traceiter_android_vh_account_process_tick_gran	UNKNOWN	
 __traceiter_android_vh_account_task_time	UNKNOWN	
@@ -692,6 +693,7 @@ __traceiter_android_vh_shrink_slab_bypass	UNKNOWN
 __traceiter_android_vh_si_mem_available_adjust	UNKNOWN	
 __traceiter_android_vh_si_meminfo_adjust	UNKNOWN	
 __traceiter_android_vh_skip_swap_map_write	UNKNOWN	
+__traceiter_android_vh_slab_folio_alloced	UNKNOWN	
 __traceiter_android_vh_smaps_pte_entry	UNKNOWN	
 __traceiter_android_vh_sync_txn_recvd	UNKNOWN	
 __traceiter_android_vh_syscall_prctl_finished	UNKNOWN	
@@ -788,6 +790,8 @@ __traceiter_sched_util_est_cfs_tp	UNKNOWN
 __traceiter_sched_util_est_se_tp	UNKNOWN	
 __traceiter_sched_wakeup	UNKNOWN	
 __traceiter_sched_waking	UNKNOWN	
+__traceiter_softirq_entry	UNKNOWN	
+__traceiter_softirq_exit	UNKNOWN	
 __traceiter_suspend_resume	UNKNOWN	
 __traceiter_task_newtask	UNKNOWN	
 __traceiter_task_rename	UNKNOWN	
@@ -920,6 +924,7 @@ __tracepoint_android_rvh_update_misfit_status	UNKNOWN
 __tracepoint_android_rvh_update_rt_rq_load_avg	UNKNOWN	
 __tracepoint_android_rvh_update_thermal_stats	UNKNOWN	
 __tracepoint_android_rvh_util_est_update	UNKNOWN	
+__tracepoint_android_rvh_util_fits_cpu	UNKNOWN	
 __tracepoint_android_rvh_wake_up_new_task	UNKNOWN	
 __tracepoint_android_vh_account_process_tick_gran	UNKNOWN	
 __tracepoint_android_vh_account_task_time	UNKNOWN	
@@ -1126,6 +1131,7 @@ __tracepoint_android_vh_shrink_slab_bypass	UNKNOWN
 __tracepoint_android_vh_si_mem_available_adjust	UNKNOWN	
 __tracepoint_android_vh_si_meminfo_adjust	UNKNOWN	
 __tracepoint_android_vh_skip_swap_map_write	UNKNOWN	
+__tracepoint_android_vh_slab_folio_alloced	UNKNOWN	
 __tracepoint_android_vh_smaps_pte_entry	UNKNOWN	
 __tracepoint_android_vh_sync_txn_recvd	UNKNOWN	
 __tracepoint_android_vh_syscall_prctl_finished	UNKNOWN	
@@ -1222,6 +1228,8 @@ __tracepoint_sched_util_est_cfs_tp	UNKNOWN
 __tracepoint_sched_util_est_se_tp	UNKNOWN	
 __tracepoint_sched_wakeup	UNKNOWN	
 __tracepoint_sched_waking	UNKNOWN	
+__tracepoint_softirq_entry	UNKNOWN	
+__tracepoint_softirq_exit	UNKNOWN	
 __tracepoint_suspend_resume	UNKNOWN	
 __tracepoint_task_newtask	UNKNOWN	
 __tracepoint_task_rename	UNKNOWN	
@@ -2002,6 +2010,7 @@ ct_idle_enter	UNKNOWN
 ct_idle_exit	UNKNOWN	
 current_time	UNKNOWN	
 current_umask	UNKNOWN	
+current_work	UNKNOWN	
 d_add	UNKNOWN	
 d_add_ci	UNKNOWN	
 d_alloc_name	UNKNOWN	
@@ -5726,6 +5735,7 @@ serdev_device_set_tiocm	UNKNOWN
 serdev_device_wait_until_sent	UNKNOWN	
 serdev_device_write_buf	UNKNOWN	
 serdev_device_write_flush	UNKNOWN	
+serial8250_do_pm	UNKNOWN	
 serial8250_do_set_termios	UNKNOWN	
 serial8250_do_shutdown	UNKNOWN	
 serial8250_do_startup	UNKNOWN	
@@ -5794,6 +5804,7 @@ show_regs	UNKNOWN
 si_mem_available	UNKNOWN	
 si_meminfo	UNKNOWN	
 si_swapinfo	UNKNOWN	
+sigprocmask	UNKNOWN	
 simple_attr_open	UNKNOWN	
 simple_attr_read	UNKNOWN	
 simple_attr_release	UNKNOWN	
@@ -6343,6 +6354,7 @@ thermal_cdev_update	UNKNOWN
 thermal_cooling_device_register	UNKNOWN	
 thermal_cooling_device_unregister	UNKNOWN	
 thermal_of_cooling_device_register	UNKNOWN	
+thermal_of_zone_register	UNKNOWN	
 thermal_of_zone_unregister	UNKNOWN	
 thermal_pressure	UNKNOWN	
 thermal_zone_bind_cooling_device	UNKNOWN	
@@ -6378,7 +6390,9 @@ touch_atime	UNKNOWN
 touch_softlockup_watchdog	UNKNOWN	
 touchscreen_parse_properties	UNKNOWN	
 touchscreen_report_pos	UNKNOWN	
+trace_array_get_by_name	UNKNOWN	
 trace_array_put	UNKNOWN	
+trace_array_set_clr_event	UNKNOWN	
 trace_clock_local	UNKNOWN	
 trace_event_buffer_commit	UNKNOWN	
 trace_event_buffer_reserve	UNKNOWN	
