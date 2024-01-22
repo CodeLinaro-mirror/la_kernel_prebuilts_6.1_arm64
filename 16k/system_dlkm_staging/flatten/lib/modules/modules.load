@@ -1,8 +1,8 @@
+gzvm.ko
 kheaders.ko
 zsmalloc.ko
 libarc4.ko
 zram.ko
-macsec.ko
 mii.ko
 can-dev.ko
 vcan.ko
@@ -28,10 +28,6 @@ r8153_ecm.ko
 cdc-acm.ko
 usbserial.ko
 ftdi_sio.ko
-ptp.ko
-ptp_kvm.ko
-memhealth.ko
-pps_core.ko
 hci_uart.ko
 btsdio.ko
 btbcm.ko
