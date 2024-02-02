@@ -4,7 +4,18 @@ package {
 
 prebuilt_kernel_modules {
     name: "microdroid_gki_kernel_modules-6.1-arm64",
-    srcs: ["zram.ko", "zsmalloc.ko"],
+    srcs: [
+        "cctrng.ko",
+        "gzvm.ko",
+        "open-dice.ko",
+        "vcpu_stall_detector.ko",
+        "virtio_balloon.ko",
+        "virtio_blk.ko",
+        "virtio_console.ko",
+        "vmw_vsock_virtio_transport.ko",
+        "zram.ko",
+        "zsmalloc.ko",
+    ],
     kernel_version: "6.1",
     installable: false,
 }
@@ -12,4 +23,12 @@ prebuilt_kernel_modules {
 filegroup {
     name: "microdroid_gki_kernel_prebuilts-6.1-arm64",
     srcs: ["kernel-6.1"],
+}
+
+android_filesystem {
+    name: "microdroid_gki_modules-6.1-arm64",
+    deps: [
+        "microdroid_gki_kernel_modules-6.1-arm64",
+    ],
+    type: "compressed_cpio",
 }
