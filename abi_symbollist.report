@@ -268,6 +268,7 @@ __of_get_address	UNKNOWN
 __of_mdiobus_register	UNKNOWN	
 __of_parse_phandle_with_args	UNKNOWN	
 __of_reset_control_get	UNKNOWN	
+__oom_reap_task_mm	UNKNOWN	
 __page_file_index	UNKNOWN	
 __page_frag_cache_drain	UNKNOWN	
 __page_mapcount	UNKNOWN	
@@ -423,6 +424,7 @@ __traceiter_android_rvh_iommu_setup_dma_ops	UNKNOWN
 __traceiter_android_rvh_irqs_disable	UNKNOWN	
 __traceiter_android_rvh_irqs_enable	UNKNOWN	
 __traceiter_android_rvh_is_cpu_allowed	UNKNOWN	
+__traceiter_android_rvh_meminfo_proc_show	UNKNOWN	
 __traceiter_android_rvh_migrate_queued_task	UNKNOWN	
 __traceiter_android_rvh_mmc_resume	UNKNOWN	
 __traceiter_android_rvh_mmc_suspend	UNKNOWN	
@@ -500,6 +502,7 @@ __traceiter_android_rvh_update_load_sum	UNKNOWN
 __traceiter_android_rvh_update_misfit_status	UNKNOWN	
 __traceiter_android_rvh_update_rt_rq_load_avg	UNKNOWN	
 __traceiter_android_rvh_update_thermal_stats	UNKNOWN	
+__traceiter_android_rvh_usb_dev_suspend	UNKNOWN	
 __traceiter_android_rvh_util_est_update	UNKNOWN	
 __traceiter_android_rvh_util_fits_cpu	UNKNOWN	
 __traceiter_android_rvh_wake_up_new_task	UNKNOWN	
@@ -523,7 +526,7 @@ __traceiter_android_vh_audio_usb_offload_connect	UNKNOWN
 __traceiter_android_vh_binder_alloc_new_buf_locked	UNKNOWN	
 __traceiter_android_vh_binder_buffer_release	UNKNOWN	
 __traceiter_android_vh_binder_del_ref	UNKNOWN	
-__traceiter_android_vh_binder_detect_low_async_space_locked	UNKNOWN	
+__traceiter_android_vh_binder_detect_low_async_space	UNKNOWN	
 __traceiter_android_vh_binder_free_buf	UNKNOWN	
 __traceiter_android_vh_binder_free_proc	UNKNOWN	
 __traceiter_android_vh_binder_has_special_work_ilocked	UNKNOWN	
@@ -726,11 +729,13 @@ __traceiter_android_vh_si_meminfo_adjust	UNKNOWN
 __traceiter_android_vh_skip_swap_map_write	UNKNOWN	
 __traceiter_android_vh_slab_folio_alloced	UNKNOWN	
 __traceiter_android_vh_smaps_pte_entry	UNKNOWN	
+__traceiter_android_vh_sound_usb_support_cpu_suspend	UNKNOWN	
 __traceiter_android_vh_sync_txn_recvd	UNKNOWN	
 __traceiter_android_vh_syscall_prctl_finished	UNKNOWN	
 __traceiter_android_vh_sysrq_crash	UNKNOWN	
 __traceiter_android_vh_task_blocks_on_rtmutex	UNKNOWN	
 __traceiter_android_vh_test_clear_look_around_ref	UNKNOWN	
+__traceiter_android_vh_thermal_pm_notify_suspend	UNKNOWN	
 __traceiter_android_vh_thermal_power_cap	UNKNOWN	
 __traceiter_android_vh_thermal_register	UNKNOWN	
 __traceiter_android_vh_thermal_unregister	UNKNOWN	
@@ -763,6 +768,7 @@ __traceiter_android_vh_ufs_update_sysfs	UNKNOWN
 __traceiter_android_vh_ufs_use_mcq_hooks	UNKNOWN	
 __traceiter_android_vh_unreserve_highatomic_bypass	UNKNOWN	
 __traceiter_android_vh_update_topology_flags_workfn	UNKNOWN	
+__traceiter_android_vh_usb_dev_resume	UNKNOWN	
 __traceiter_android_vh_use_amu_fie	UNKNOWN	
 __traceiter_android_vh_vmscan_kswapd_done	UNKNOWN	
 __traceiter_android_vh_watchdog_timer_softlockup	UNKNOWN	
@@ -888,6 +894,7 @@ __tracepoint_android_rvh_iommu_setup_dma_ops	UNKNOWN
 __tracepoint_android_rvh_irqs_disable	UNKNOWN	
 __tracepoint_android_rvh_irqs_enable	UNKNOWN	
 __tracepoint_android_rvh_is_cpu_allowed	UNKNOWN	
+__tracepoint_android_rvh_meminfo_proc_show	UNKNOWN	
 __tracepoint_android_rvh_migrate_queued_task	UNKNOWN	
 __tracepoint_android_rvh_mmc_resume	UNKNOWN	
 __tracepoint_android_rvh_mmc_suspend	UNKNOWN	
@@ -965,6 +972,7 @@ __tracepoint_android_rvh_update_load_sum	UNKNOWN
 __tracepoint_android_rvh_update_misfit_status	UNKNOWN	
 __tracepoint_android_rvh_update_rt_rq_load_avg	UNKNOWN	
 __tracepoint_android_rvh_update_thermal_stats	UNKNOWN	
+__tracepoint_android_rvh_usb_dev_suspend	UNKNOWN	
 __tracepoint_android_rvh_util_est_update	UNKNOWN	
 __tracepoint_android_rvh_util_fits_cpu	UNKNOWN	
 __tracepoint_android_rvh_wake_up_new_task	UNKNOWN	
@@ -988,7 +996,7 @@ __tracepoint_android_vh_audio_usb_offload_connect	UNKNOWN
 __tracepoint_android_vh_binder_alloc_new_buf_locked	UNKNOWN	
 __tracepoint_android_vh_binder_buffer_release	UNKNOWN	
 __tracepoint_android_vh_binder_del_ref	UNKNOWN	
-__tracepoint_android_vh_binder_detect_low_async_space_locked	UNKNOWN	
+__tracepoint_android_vh_binder_detect_low_async_space	UNKNOWN	
 __tracepoint_android_vh_binder_free_buf	UNKNOWN	
 __tracepoint_android_vh_binder_free_proc	UNKNOWN	
 __tracepoint_android_vh_binder_has_special_work_ilocked	UNKNOWN	
@@ -1191,11 +1199,13 @@ __tracepoint_android_vh_si_meminfo_adjust	UNKNOWN
 __tracepoint_android_vh_skip_swap_map_write	UNKNOWN	
 __tracepoint_android_vh_slab_folio_alloced	UNKNOWN	
 __tracepoint_android_vh_smaps_pte_entry	UNKNOWN	
+__tracepoint_android_vh_sound_usb_support_cpu_suspend	UNKNOWN	
 __tracepoint_android_vh_sync_txn_recvd	UNKNOWN	
 __tracepoint_android_vh_syscall_prctl_finished	UNKNOWN	
 __tracepoint_android_vh_sysrq_crash	UNKNOWN	
 __tracepoint_android_vh_task_blocks_on_rtmutex	UNKNOWN	
 __tracepoint_android_vh_test_clear_look_around_ref	UNKNOWN	
+__tracepoint_android_vh_thermal_pm_notify_suspend	UNKNOWN	
 __tracepoint_android_vh_thermal_power_cap	UNKNOWN	
 __tracepoint_android_vh_thermal_register	UNKNOWN	
 __tracepoint_android_vh_thermal_unregister	UNKNOWN	
@@ -1228,6 +1238,7 @@ __tracepoint_android_vh_ufs_update_sysfs	UNKNOWN
 __tracepoint_android_vh_ufs_use_mcq_hooks	UNKNOWN	
 __tracepoint_android_vh_unreserve_highatomic_bypass	UNKNOWN	
 __tracepoint_android_vh_update_topology_flags_workfn	UNKNOWN	
+__tracepoint_android_vh_usb_dev_resume	UNKNOWN	
 __tracepoint_android_vh_use_amu_fie	UNKNOWN	
 __tracepoint_android_vh_vmscan_kswapd_done	UNKNOWN	
 __tracepoint_android_vh_watchdog_timer_softlockup	UNKNOWN	
@@ -1475,6 +1486,7 @@ autoremove_wake_function	UNKNOWN
 auxiliary_driver_unregister	UNKNOWN	
 available_idle_cpu	UNKNOWN	
 avenrun	UNKNOWN	
+backlight_device_get_by_name	UNKNOWN	
 backlight_device_get_by_type	UNKNOWN	
 backlight_device_register	UNKNOWN	
 backlight_device_set_brightness	UNKNOWN	
@@ -1939,6 +1951,7 @@ copy_page	UNKNOWN
 copy_page_from_iter_atomic	UNKNOWN	
 cpu_all_bits	UNKNOWN	
 cpu_bit_bitmap	UNKNOWN	
+cpu_busy_with_softirqs	UNKNOWN	
 cpu_have_feature	UNKNOWN	
 cpu_hotplug_disable	UNKNOWN	
 cpu_hotplug_enable	UNKNOWN	
@@ -2178,6 +2191,7 @@ del_gendisk	UNKNOWN
 del_timer	UNKNOWN	
 del_timer_sync	UNKNOWN	
 delayed_work_timer_fn	UNKNOWN	
+dentry_path_raw	UNKNOWN	
 des_expand_key	UNKNOWN	
 desc_to_gpio	UNKNOWN	
 destroy_workqueue	UNKNOWN	
@@ -2688,6 +2702,7 @@ dmaenginem_async_device_register	UNKNOWN
 dmam_alloc_attrs	UNKNOWN	
 dmam_free_coherent	UNKNOWN	
 do_SAK	UNKNOWN	
+do_send_sig_info	UNKNOWN	
 do_trace_netlink_extack	UNKNOWN	
 do_trace_rcu_torture_read	UNKNOWN	
 do_wait_intr	UNKNOWN	
@@ -2869,6 +2884,7 @@ drm_crtc_vblank_waitqueue	UNKNOWN
 drm_crtc_wait_one_vblank	UNKNOWN	
 drm_cvt_mode	UNKNOWN	
 drm_debugfs_create_files	UNKNOWN	
+drm_debugfs_remove_files	UNKNOWN	
 drm_default_rgb_quant_range	UNKNOWN	
 drm_detect_hdmi_monitor	UNKNOWN	
 drm_detect_monitor_audio	UNKNOWN	
@@ -3342,6 +3358,7 @@ fs_bio_set	UNKNOWN
 fs_kobj	UNKNOWN	
 fs_param_is_string	UNKNOWN	
 fs_param_is_u32	UNKNOWN	
+fscrypt_file_open	UNKNOWN	
 fsg_common_create_luns	UNKNOWN	
 fsg_common_set_cdev	UNKNOWN	
 fsg_common_set_inquiry_string	UNKNOWN	
@@ -3482,6 +3499,7 @@ get_random_u16	UNKNOWN
 get_random_u32	UNKNOWN	
 get_random_u64	UNKNOWN	
 get_random_u8	UNKNOWN	
+get_reclaim_params	UNKNOWN	
 get_sg_io_hdr	UNKNOWN	
 get_slabinfo	UNKNOWN	
 get_state_synchronize_rcu	UNKNOWN	
@@ -4626,10 +4644,13 @@ netdev_notice	UNKNOWN
 netdev_notify_peers	UNKNOWN	
 netdev_pick_tx	UNKNOWN	
 netdev_printk	UNKNOWN	
+netdev_reset_tc	UNKNOWN	
 netdev_rss_key_fill	UNKNOWN	
 netdev_rx_handler_register	UNKNOWN	
 netdev_rx_handler_unregister	UNKNOWN	
 netdev_set_default_ethtool_ops	UNKNOWN	
+netdev_set_num_tc	UNKNOWN	
+netdev_set_tc_queue	UNKNOWN	
 netdev_state_change	UNKNOWN	
 netdev_update_features	UNKNOWN	
 netdev_upper_dev_link	UNKNOWN	
@@ -4983,6 +5004,7 @@ pci_bus_resource_n	UNKNOWN
 pci_bus_type	UNKNOWN	
 pci_choose_state	UNKNOWN	
 pci_clear_master	UNKNOWN	
+pci_clear_mwi	UNKNOWN	
 pci_dev_get	UNKNOWN	
 pci_dev_present	UNKNOWN	
 pci_dev_put	UNKNOWN	
@@ -5064,7 +5086,9 @@ pci_restore_state	UNKNOWN
 pci_save_state	UNKNOWN	
 pci_select_bars	UNKNOWN	
 pci_set_master	UNKNOWN	
+pci_set_mwi	UNKNOWN	
 pci_set_power_state	UNKNOWN	
+pci_sriov_set_totalvfs	UNKNOWN	
 pci_stop_root_bus	UNKNOWN	
 pci_store_saved_state	UNKNOWN	
 pci_unlock_rescan_remove	UNKNOWN	
@@ -5073,6 +5097,7 @@ pci_unregister_driver	UNKNOWN
 pci_vfs_assigned	UNKNOWN	
 pci_wake_from_d3	UNKNOWN	
 pci_walk_bus	UNKNOWN	
+pci_write_config_byte	UNKNOWN	
 pci_write_config_dword	UNKNOWN	
 pci_write_config_word	UNKNOWN	
 pcie_bandwidth_available	UNKNOWN	
@@ -5400,6 +5425,7 @@ proc_dointvec_minmax	UNKNOWN
 proc_dostring	UNKNOWN	
 proc_douintvec_minmax	UNKNOWN	
 proc_doulongvec_minmax	UNKNOWN	
+proc_get_parent_data	UNKNOWN	
 proc_mkdir	UNKNOWN	
 proc_mkdir_data	UNKNOWN	
 proc_remove	UNKNOWN	
@@ -5963,6 +5989,8 @@ seq_lseek	UNKNOWN
 seq_open	UNKNOWN	
 seq_open_private	UNKNOWN	
 seq_printf	UNKNOWN	
+seq_put_decimal_ll	UNKNOWN	
+seq_put_decimal_ull	UNKNOWN	
 seq_putc	UNKNOWN	
 seq_puts	UNKNOWN	
 seq_read	UNKNOWN	
@@ -6012,6 +6040,7 @@ set_normalized_timespec64	UNKNOWN
 set_page_dirty	UNKNOWN	
 set_page_dirty_lock	UNKNOWN	
 set_page_writeback	UNKNOWN	
+set_reclaim_params	UNKNOWN	
 set_task_cpu	UNKNOWN	
 set_user_nice	UNKNOWN	
 setattr_copy	UNKNOWN	
@@ -6193,6 +6222,7 @@ snd_pcm_fill_iec958_consumer_hw_params	UNKNOWN
 snd_pcm_format_big_endian	UNKNOWN	
 snd_pcm_format_linear	UNKNOWN	
 snd_pcm_format_physical_width	UNKNOWN	
+snd_pcm_format_size	UNKNOWN	
 snd_pcm_format_unsigned	UNKNOWN	
 snd_pcm_format_width	UNKNOWN	
 snd_pcm_hw_constraint_eld	UNKNOWN	
@@ -6219,8 +6249,10 @@ snd_pcm_set_ops	UNKNOWN
 snd_pcm_std_chmaps	UNKNOWN	
 snd_pcm_stop	UNKNOWN	
 snd_pcm_stop_xrun	UNKNOWN	
+snd_pcm_suspend_all	UNKNOWN	
 snd_sgbuf_get_addr	UNKNOWN	
 snd_soc_add_card_controls	UNKNOWN	
+snd_soc_add_component	UNKNOWN	
 snd_soc_add_component_controls	UNKNOWN	
 snd_soc_add_dai_controls	UNKNOWN	
 snd_soc_bytes_get	UNKNOWN	
@@ -6238,6 +6270,7 @@ snd_soc_component_exit_regmap	UNKNOWN
 snd_soc_component_force_enable_pin	UNKNOWN	
 snd_soc_component_get_pin_status	UNKNOWN	
 snd_soc_component_init_regmap	UNKNOWN	
+snd_soc_component_initialize	UNKNOWN	
 snd_soc_component_read	UNKNOWN	
 snd_soc_component_read_field	UNKNOWN	
 snd_soc_component_set_jack	UNKNOWN	
@@ -6347,6 +6380,7 @@ snd_soc_tplg_component_remove	UNKNOWN
 snd_soc_tplg_widget_bind_event	UNKNOWN	
 snd_soc_unregister_card	UNKNOWN	
 snd_soc_unregister_component	UNKNOWN	
+snd_soc_unregister_component_by_driver	UNKNOWN	
 snd_timer_interrupt	UNKNOWN	
 snd_usb_autoresume	UNKNOWN	
 snd_usb_autosuspend	UNKNOWN	
@@ -6583,13 +6617,16 @@ tasklet_kill	UNKNOWN
 tasklet_setup	UNKNOWN	
 tasklet_unlock_wait	UNKNOWN	
 tasklist_lock	UNKNOWN	
+tc_cleanup_offload_action	UNKNOWN	
 tc_setup_cb_add	UNKNOWN	
 tc_setup_cb_call	UNKNOWN	
 tc_setup_cb_destroy	UNKNOWN	
 tc_setup_cb_reoffload	UNKNOWN	
+tc_setup_offload_action	UNKNOWN	
 tcf_action_check_ctrlact	UNKNOWN	
 tcf_action_exec	UNKNOWN	
 tcf_action_set_ctrlact	UNKNOWN	
+tcf_action_update_hw_stats	UNKNOWN	
 tcf_action_update_stats	UNKNOWN	
 tcf_chain_put_by_act	UNKNOWN	
 tcf_exts_destroy	UNKNOWN	
@@ -6598,6 +6635,7 @@ tcf_exts_dump_stats	UNKNOWN
 tcf_exts_num_actions	UNKNOWN	
 tcf_exts_terse_dump	UNKNOWN	
 tcf_exts_validate	UNKNOWN	
+tcf_exts_validate_ex	UNKNOWN	
 tcf_generic_walker	UNKNOWN	
 tcf_idr_check_alloc	UNKNOWN	
 tcf_idr_cleanup	UNKNOWN	
@@ -6890,6 +6928,7 @@ udp_sock_create4	UNKNOWN
 udp_sock_create6	UNKNOWN	
 udp_table	UNKNOWN	
 udp_tunnel6_xmit_skb	UNKNOWN	
+udp_tunnel_nic_ops	UNKNOWN	
 udp_tunnel_sock_release	UNKNOWN	
 udp_tunnel_xmit_skb	UNKNOWN	
 ufshcd_alloc_host	UNKNOWN	
@@ -7663,9 +7702,13 @@ xt_compat_unlock	UNKNOWN
 xt_data_to_user	UNKNOWN	
 xt_find_match	UNKNOWN	
 xt_register_match	UNKNOWN	
+xt_register_target	UNKNOWN	
+xt_register_targets	UNKNOWN	
 xt_request_find_match	UNKNOWN	
 xt_request_find_target	UNKNOWN	
 xt_unregister_match	UNKNOWN	
+xt_unregister_target	UNKNOWN	
+xt_unregister_targets	UNKNOWN	
 zap_vma_ptes	UNKNOWN	
 zero_pfn	UNKNOWN	
 zlib_deflate	UNKNOWN	
