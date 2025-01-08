@@ -9,6 +9,7 @@ ___ratelimit	UNKNOWN
 ___update_load_avg	UNKNOWN	
 ___update_load_sum	UNKNOWN	
 __alloc_pages	UNKNOWN	
+__alloc_pages_bulk	UNKNOWN	
 __alloc_percpu	UNKNOWN	
 __alloc_percpu_gfp	UNKNOWN	
 __alloc_skb	UNKNOWN	
@@ -301,6 +302,7 @@ __pm_runtime_set_status	UNKNOWN
 __pm_runtime_suspend	UNKNOWN	
 __pm_runtime_use_autosuspend	UNKNOWN	
 __pm_stay_awake	UNKNOWN	
+__pmd_trans_huge_lock	UNKNOWN	
 __printk_ratelimit	UNKNOWN	
 __pskb_copy_fclone	UNKNOWN	
 __pskb_pull_tail	UNKNOWN	
@@ -433,6 +435,7 @@ __traceiter_android_rvh_finish_prio_fork	UNKNOWN
 __traceiter_android_rvh_flush_task	UNKNOWN	
 __traceiter_android_rvh_get_nohz_timer_target	UNKNOWN	
 __traceiter_android_rvh_gic_v3_set_affinity	UNKNOWN	
+__traceiter_android_rvh_hw_protection_shutdown	UNKNOWN	
 __traceiter_android_rvh_iommu_alloc_insert_iova	UNKNOWN	
 __traceiter_android_rvh_iommu_iovad_init_alloc_algo	UNKNOWN	
 __traceiter_android_rvh_iommu_limit_align_shift	UNKNOWN	
@@ -710,7 +713,10 @@ __traceiter_android_vh_mm_compaction_begin	UNKNOWN
 __traceiter_android_vh_mm_compaction_end	UNKNOWN	
 __traceiter_android_vh_mm_kcompactd_cpu_online	UNKNOWN	
 __traceiter_android_vh_mmap_region	UNKNOWN	
+__traceiter_android_vh_mmc_attach_sd	UNKNOWN	
 __traceiter_android_vh_mmc_blk_mq_rw_recovery	UNKNOWN	
+__traceiter_android_vh_mmc_blk_reset	UNKNOWN	
+__traceiter_android_vh_mmc_gpio_cd_irqt	UNKNOWN	
 __traceiter_android_vh_mmc_update_mmc_queue	UNKNOWN	
 __traceiter_android_vh_mmput	UNKNOWN	
 __traceiter_android_vh_modify_scan_control	UNKNOWN	
@@ -786,6 +792,7 @@ __traceiter_android_vh_sched_show_task	UNKNOWN
 __traceiter_android_vh_sched_stat_runtime_rt	UNKNOWN	
 __traceiter_android_vh_scheduler_tick	UNKNOWN	
 __traceiter_android_vh_sd_update_bus_speed_mode	UNKNOWN	
+__traceiter_android_vh_sdhci_get_cd	UNKNOWN	
 __traceiter_android_vh_set_task_comm	UNKNOWN	
 __traceiter_android_vh_set_tsk_need_resched_lazy	UNKNOWN	
 __traceiter_android_vh_set_wake_flags	UNKNOWN	
@@ -805,7 +812,9 @@ __traceiter_android_vh_shrink_slab_bypass	UNKNOWN
 __traceiter_android_vh_si_mem_available_adjust	UNKNOWN	
 __traceiter_android_vh_si_meminfo_adjust	UNKNOWN	
 __traceiter_android_vh_skip_swap_map_write	UNKNOWN	
+__traceiter_android_vh_slab_alloc_node	UNKNOWN	
 __traceiter_android_vh_slab_folio_alloced	UNKNOWN	
+__traceiter_android_vh_slab_free	UNKNOWN	
 __traceiter_android_vh_smaps_pte_entry	UNKNOWN	
 __traceiter_android_vh_sound_usb_support_cpu_suspend	UNKNOWN	
 __traceiter_android_vh_swapmem_gather_add_bypass	UNKNOWN	
@@ -976,6 +985,7 @@ __tracepoint_android_rvh_finish_prio_fork	UNKNOWN
 __tracepoint_android_rvh_flush_task	UNKNOWN	
 __tracepoint_android_rvh_get_nohz_timer_target	UNKNOWN	
 __tracepoint_android_rvh_gic_v3_set_affinity	UNKNOWN	
+__tracepoint_android_rvh_hw_protection_shutdown	UNKNOWN	
 __tracepoint_android_rvh_iommu_alloc_insert_iova	UNKNOWN	
 __tracepoint_android_rvh_iommu_iovad_init_alloc_algo	UNKNOWN	
 __tracepoint_android_rvh_iommu_limit_align_shift	UNKNOWN	
@@ -1253,7 +1263,10 @@ __tracepoint_android_vh_mm_compaction_begin	UNKNOWN
 __tracepoint_android_vh_mm_compaction_end	UNKNOWN	
 __tracepoint_android_vh_mm_kcompactd_cpu_online	UNKNOWN	
 __tracepoint_android_vh_mmap_region	UNKNOWN	
+__tracepoint_android_vh_mmc_attach_sd	UNKNOWN	
 __tracepoint_android_vh_mmc_blk_mq_rw_recovery	UNKNOWN	
+__tracepoint_android_vh_mmc_blk_reset	UNKNOWN	
+__tracepoint_android_vh_mmc_gpio_cd_irqt	UNKNOWN	
 __tracepoint_android_vh_mmc_update_mmc_queue	UNKNOWN	
 __tracepoint_android_vh_mmput	UNKNOWN	
 __tracepoint_android_vh_modify_scan_control	UNKNOWN	
@@ -1329,6 +1342,7 @@ __tracepoint_android_vh_sched_show_task	UNKNOWN
 __tracepoint_android_vh_sched_stat_runtime_rt	UNKNOWN	
 __tracepoint_android_vh_scheduler_tick	UNKNOWN	
 __tracepoint_android_vh_sd_update_bus_speed_mode	UNKNOWN	
+__tracepoint_android_vh_sdhci_get_cd	UNKNOWN	
 __tracepoint_android_vh_set_task_comm	UNKNOWN	
 __tracepoint_android_vh_set_tsk_need_resched_lazy	UNKNOWN	
 __tracepoint_android_vh_set_wake_flags	UNKNOWN	
@@ -1348,7 +1362,9 @@ __tracepoint_android_vh_shrink_slab_bypass	UNKNOWN
 __tracepoint_android_vh_si_mem_available_adjust	UNKNOWN	
 __tracepoint_android_vh_si_meminfo_adjust	UNKNOWN	
 __tracepoint_android_vh_skip_swap_map_write	UNKNOWN	
+__tracepoint_android_vh_slab_alloc_node	UNKNOWN	
 __tracepoint_android_vh_slab_folio_alloced	UNKNOWN	
+__tracepoint_android_vh_slab_free	UNKNOWN	
 __tracepoint_android_vh_smaps_pte_entry	UNKNOWN	
 __tracepoint_android_vh_sound_usb_support_cpu_suspend	UNKNOWN	
 __tracepoint_android_vh_swapmem_gather_add_bypass	UNKNOWN	
@@ -1624,11 +1640,13 @@ android_debug_symbol	UNKNOWN
 android_rvh_probe_register	UNKNOWN	
 anon_inode_getfd	UNKNOWN	
 anon_inode_getfile	UNKNOWN	
+anon_vma_name	UNKNOWN	
 arc4_crypt	UNKNOWN	
 arc4_setkey	UNKNOWN	
 arch_freq_scale	UNKNOWN	
 arch_invalidate_pmem	UNKNOWN	
 arch_timer_read_counter	UNKNOWN	
+arch_vma_name	UNKNOWN	
 argv_free	UNKNOWN	
 argv_split	UNKNOWN	
 arm64_use_ng_mappings	UNKNOWN	
@@ -2954,6 +2972,7 @@ drm_aperture_remove_conflicting_framebuffers	UNKNOWN
 drm_aperture_remove_conflicting_pci_framebuffers	UNKNOWN	
 drm_atomic_add_affected_connectors	UNKNOWN	
 drm_atomic_add_affected_planes	UNKNOWN	
+drm_atomic_add_encoder_bridges	UNKNOWN	
 drm_atomic_bridge_chain_disable	UNKNOWN	
 drm_atomic_bridge_chain_enable	UNKNOWN	
 drm_atomic_bridge_chain_post_disable	UNKNOWN	
@@ -3914,6 +3933,7 @@ hci_alloc_dev_priv	UNKNOWN
 hci_cmd_sync	UNKNOWN	
 hci_cmd_sync_cancel	UNKNOWN	
 hci_cmd_sync_queue	UNKNOWN	
+hci_cmd_sync_status	UNKNOWN	
 hci_conn_check_secure	UNKNOWN	
 hci_conn_security	UNKNOWN	
 hci_conn_switch_role	UNKNOWN	
@@ -4500,6 +4520,14 @@ kill_litter_super	UNKNOWN
 kill_pid	UNKNOWN	
 kimage_vaddr	UNKNOWN	
 kimage_voffset	UNKNOWN	
+klist_add_head	UNKNOWN	
+klist_add_tail	UNKNOWN	
+klist_init	UNKNOWN	
+klist_iter_exit	UNKNOWN	
+klist_iter_init	UNKNOWN	
+klist_next	UNKNOWN	
+klist_node_attached	UNKNOWN	
+klist_remove	UNKNOWN	
 kmalloc_caches	UNKNOWN	
 kmalloc_large	UNKNOWN	
 kmalloc_large_node	UNKNOWN	
@@ -5743,8 +5771,10 @@ pm_suspend_global_flags	UNKNOWN
 pm_suspend_target_state	UNKNOWN	
 pm_system_wakeup	UNKNOWN	
 pm_wakeup_dev_event	UNKNOWN	
+pm_wakeup_irq	UNKNOWN	
 pm_wakeup_ws_event	UNKNOWN	
 pm_wq	UNKNOWN	
+pmd_clear_bad	UNKNOWN	
 policy_has_boost_freq	UNKNOWN	
 poll_state_synchronize_rcu	UNKNOWN	
 poll_state_synchronize_srcu	UNKNOWN	
@@ -6445,10 +6475,17 @@ serdev_device_write	UNKNOWN
 serdev_device_write_buf	UNKNOWN	
 serdev_device_write_flush	UNKNOWN	
 serdev_device_write_wakeup	UNKNOWN	
+serial8250_clear_and_reinit_fifos	UNKNOWN	
 serial8250_do_pm	UNKNOWN	
+serial8250_do_set_divisor	UNKNOWN	
+serial8250_do_set_ldisc	UNKNOWN	
 serial8250_do_set_termios	UNKNOWN	
 serial8250_do_shutdown	UNKNOWN	
 serial8250_do_startup	UNKNOWN	
+serial8250_em485_config	UNKNOWN	
+serial8250_em485_start_tx	UNKNOWN	
+serial8250_em485_stop_tx	UNKNOWN	
+serial8250_em485_supported	UNKNOWN	
 serial8250_get_port	UNKNOWN	
 serial8250_handle_irq	UNKNOWN	
 serial8250_register_8250_port	UNKNOWN	
@@ -6457,6 +6494,7 @@ serial8250_rpm_get	UNKNOWN
 serial8250_rpm_put	UNKNOWN	
 serial8250_suspend_port	UNKNOWN	
 serial8250_unregister_port	UNKNOWN	
+serial8250_update_uartclk	UNKNOWN	
 serio_close	UNKNOWN	
 serio_interrupt	UNKNOWN	
 serio_open	UNKNOWN	
@@ -6857,6 +6895,8 @@ sock_cmsg_send	UNKNOWN
 sock_common_getsockopt	UNKNOWN	
 sock_common_recvmsg	UNKNOWN	
 sock_common_setsockopt	UNKNOWN	
+sock_copy_user_timeval	UNKNOWN	
+sock_create	UNKNOWN	
 sock_create_kern	UNKNOWN	
 sock_diag_register	UNKNOWN	
 sock_diag_save_cookie	UNKNOWN	
@@ -6865,6 +6905,7 @@ sock_edemux	UNKNOWN
 sock_efree	UNKNOWN	
 sock_from_file	UNKNOWN	
 sock_gen_put	UNKNOWN	
+sock_get_timeout	UNKNOWN	
 sock_gettstamp	UNKNOWN	
 sock_i_ino	UNKNOWN	
 sock_i_uid	UNKNOWN	
@@ -7336,6 +7377,7 @@ tty_std_termios	UNKNOWN
 tty_termios_baud_rate	UNKNOWN	
 tty_termios_copy_hw	UNKNOWN	
 tty_termios_encode_baud_rate	UNKNOWN	
+tty_termios_hw_change	UNKNOWN	
 tty_unlock	UNKNOWN	
 tty_unregister_device	UNKNOWN	
 tty_unregister_driver	UNKNOWN	
@@ -8064,6 +8106,7 @@ vm_memory_committed	UNKNOWN
 vm_mmap	UNKNOWN	
 vm_munmap	UNKNOWN	
 vm_node_stat	UNKNOWN	
+vm_normal_page	UNKNOWN	
 vm_unmap_aliases	UNKNOWN	
 vm_unmap_ram	UNKNOWN	
 vm_unmapped_area	UNKNOWN	
@@ -8089,8 +8132,15 @@ vring_new_virtqueue	UNKNOWN
 vring_transport_features	UNKNOWN	
 vscnprintf	UNKNOWN	
 vsnprintf	UNKNOWN	
+vsock_addr_bound	UNKNOWN	
+vsock_addr_cast	UNKNOWN	
+vsock_addr_equals_addr	UNKNOWN	
+vsock_addr_init	UNKNOWN	
+vsock_addr_unbind	UNKNOWN	
+vsock_addr_validate	UNKNOWN	
 vsock_core_register	UNKNOWN	
 vsock_core_unregister	UNKNOWN	
+vsock_deliver_tap	UNKNOWN	
 vsock_for_each_connected_socket	UNKNOWN	
 vsprintf	UNKNOWN	
 vsscanf	UNKNOWN	
@@ -8124,6 +8174,7 @@ wakeup_sources_read_lock	UNKNOWN
 wakeup_sources_read_unlock	UNKNOWN	
 wakeup_sources_walk_next	UNKNOWN	
 wakeup_sources_walk_start	UNKNOWN	
+walk_page_range	UNKNOWN	
 watchdog_init_timeout	UNKNOWN	
 watchdog_register_device	UNKNOWN	
 watchdog_set_restart_priority	UNKNOWN	
