@@ -67,6 +67,7 @@ __clk_mux_determine_rate	UNKNOWN
 __clk_mux_determine_rate_closest	UNKNOWN	
 __clocksource_register_scale	UNKNOWN	
 __cma_alloc	UNKNOWN	
+__cond_resched_lock	UNKNOWN	
 __const_udelay	UNKNOWN	
 __copy_overflow	UNKNOWN	
 __cpu_active_mask	UNKNOWN	
@@ -155,6 +156,7 @@ __ethtool_get_link_ksettings	UNKNOWN
 __fdget	UNKNOWN	
 __filemap_get_folio	UNKNOWN	
 __filemap_set_wb_err	UNKNOWN	
+__find_get_block	UNKNOWN	
 __find_nth_bit	UNKNOWN	
 __flush_workqueue	UNKNOWN	
 __folio_alloc	UNKNOWN	
@@ -303,6 +305,7 @@ __pm_runtime_suspend	UNKNOWN
 __pm_runtime_use_autosuspend	UNKNOWN	
 __pm_stay_awake	UNKNOWN	
 __pmd_trans_huge_lock	UNKNOWN	
+__posix_acl_create	UNKNOWN	
 __printk_ratelimit	UNKNOWN	
 __pskb_copy_fclone	UNKNOWN	
 __pskb_pull_tail	UNKNOWN	
@@ -530,6 +533,8 @@ __traceiter_android_rvh_update_thermal_stats	UNKNOWN
 __traceiter_android_rvh_usb_dev_suspend	UNKNOWN	
 __traceiter_android_rvh_util_est_update	UNKNOWN	
 __traceiter_android_rvh_util_fits_cpu	UNKNOWN	
+__traceiter_android_rvh_vmscan_kswapd_done	UNKNOWN	
+__traceiter_android_rvh_vmscan_kswapd_wake	UNKNOWN	
 __traceiter_android_rvh_wake_up_new_task	UNKNOWN	
 __traceiter_android_vh_account_process_tick_gran	UNKNOWN	
 __traceiter_android_vh_account_task_time	UNKNOWN	
@@ -682,6 +687,7 @@ __traceiter_android_vh_hibernate_state	UNKNOWN
 __traceiter_android_vh_hibernated_do_mem_alloc	UNKNOWN	
 __traceiter_android_vh_ignore_dmabuf_vmap_bounds	UNKNOWN	
 __traceiter_android_vh_init_aes_encrypt	UNKNOWN	
+__traceiter_android_vh_io_statistics	UNKNOWN	
 __traceiter_android_vh_iommu_iovad_alloc_iova	UNKNOWN	
 __traceiter_android_vh_iommu_iovad_free_iova	UNKNOWN	
 __traceiter_android_vh_ipi_stop	UNKNOWN	
@@ -910,6 +916,10 @@ __traceiter_pelt_dl_tp	UNKNOWN
 __traceiter_pelt_irq_tp	UNKNOWN	
 __traceiter_pelt_rt_tp	UNKNOWN	
 __traceiter_pelt_se_tp	UNKNOWN	
+__traceiter_rpm_idle	UNKNOWN	
+__traceiter_rpm_resume	UNKNOWN	
+__traceiter_rpm_return_int	UNKNOWN	
+__traceiter_rpm_suspend	UNKNOWN	
 __traceiter_rwmmio_post_read	UNKNOWN	
 __traceiter_rwmmio_read	UNKNOWN	
 __traceiter_rwmmio_write	UNKNOWN	
@@ -1080,6 +1090,8 @@ __tracepoint_android_rvh_update_thermal_stats	UNKNOWN
 __tracepoint_android_rvh_usb_dev_suspend	UNKNOWN	
 __tracepoint_android_rvh_util_est_update	UNKNOWN	
 __tracepoint_android_rvh_util_fits_cpu	UNKNOWN	
+__tracepoint_android_rvh_vmscan_kswapd_done	UNKNOWN	
+__tracepoint_android_rvh_vmscan_kswapd_wake	UNKNOWN	
 __tracepoint_android_rvh_wake_up_new_task	UNKNOWN	
 __tracepoint_android_vh_account_process_tick_gran	UNKNOWN	
 __tracepoint_android_vh_account_task_time	UNKNOWN	
@@ -1232,6 +1244,7 @@ __tracepoint_android_vh_hibernate_state	UNKNOWN
 __tracepoint_android_vh_hibernated_do_mem_alloc	UNKNOWN	
 __tracepoint_android_vh_ignore_dmabuf_vmap_bounds	UNKNOWN	
 __tracepoint_android_vh_init_aes_encrypt	UNKNOWN	
+__tracepoint_android_vh_io_statistics	UNKNOWN	
 __tracepoint_android_vh_iommu_iovad_alloc_iova	UNKNOWN	
 __tracepoint_android_vh_iommu_iovad_free_iova	UNKNOWN	
 __tracepoint_android_vh_ipi_stop	UNKNOWN	
@@ -1460,6 +1473,10 @@ __tracepoint_pelt_dl_tp	UNKNOWN
 __tracepoint_pelt_irq_tp	UNKNOWN	
 __tracepoint_pelt_rt_tp	UNKNOWN	
 __tracepoint_pelt_se_tp	UNKNOWN	
+__tracepoint_rpm_idle	UNKNOWN	
+__tracepoint_rpm_resume	UNKNOWN	
+__tracepoint_rpm_return_int	UNKNOWN	
+__tracepoint_rpm_suspend	UNKNOWN	
 __tracepoint_rwmmio_post_read	UNKNOWN	
 __tracepoint_rwmmio_read	UNKNOWN	
 __tracepoint_rwmmio_write	UNKNOWN	
@@ -1592,6 +1609,7 @@ add_swap_extent	UNKNOWN
 add_taint	UNKNOWN	
 add_timer	UNKNOWN	
 add_timer_on	UNKNOWN	
+add_to_page_cache_lru	UNKNOWN	
 add_uevent_var	UNKNOWN	
 add_wait_queue	UNKNOWN	
 add_wait_queue_exclusive	UNKNOWN	
@@ -1613,6 +1631,7 @@ alarm_try_to_cancel	UNKNOWN
 alarmtimer_get_rtcdev	UNKNOWN	
 all_vm_events	UNKNOWN	
 alloc_anon_inode	UNKNOWN	
+alloc_buffer_head	UNKNOWN	
 alloc_can_err_skb	UNKNOWN	
 alloc_can_skb	UNKNOWN	
 alloc_candev_mqs	UNKNOWN	
@@ -1759,6 +1778,7 @@ blk_mq_freeze_queue	UNKNOWN
 blk_mq_init_queue	UNKNOWN	
 blk_mq_map_queues	UNKNOWN	
 blk_mq_quiesce_queue	UNKNOWN	
+blk_mq_quiesce_queue_nowait	UNKNOWN	
 blk_mq_requeue_request	UNKNOWN	
 blk_mq_rq_cpu	UNKNOWN	
 blk_mq_run_hw_queue	UNKNOWN	
@@ -2357,6 +2377,7 @@ d_make_root	UNKNOWN
 d_move	UNKNOWN	
 d_obtain_alias	UNKNOWN	
 d_path	UNKNOWN	
+d_rehash	UNKNOWN	
 d_splice_alias	UNKNOWN	
 dapm_clock_event	UNKNOWN	
 dapm_kcontrol_get_value	UNKNOWN	
@@ -2398,6 +2419,7 @@ debugfs_rename	UNKNOWN
 dec_node_page_state	UNKNOWN	
 dec_zone_page_state	UNKNOWN	
 default_llseek	UNKNOWN	
+default_qdisc_ops	UNKNOWN	
 default_wake_function	UNKNOWN	
 deferred_free	UNKNOWN	
 del_gendisk	UNKNOWN	
@@ -2408,6 +2430,7 @@ dentry_path_raw	UNKNOWN
 des_expand_key	UNKNOWN	
 desc_to_gpio	UNKNOWN	
 destroy_workqueue	UNKNOWN	
+dev_activate	UNKNOWN	
 dev_add_pack	UNKNOWN	
 dev_addr_mod	UNKNOWN	
 dev_alloc_name	UNKNOWN	
@@ -2417,6 +2440,7 @@ dev_close	UNKNOWN
 dev_close_many	UNKNOWN	
 dev_coredumpm	UNKNOWN	
 dev_coredumpv	UNKNOWN	
+dev_deactivate	UNKNOWN	
 dev_driver_string	UNKNOWN	
 dev_err_probe	UNKNOWN	
 dev_fetch_sw_netstats	UNKNOWN	
@@ -2432,6 +2456,7 @@ dev_get_stats	UNKNOWN
 dev_get_tstats64	UNKNOWN	
 dev_getbyhwaddr_rcu	UNKNOWN	
 dev_getfirstbyhwtype	UNKNOWN	
+dev_graft_qdisc	UNKNOWN	
 dev_load	UNKNOWN	
 dev_mc_add	UNKNOWN	
 dev_mc_del	UNKNOWN	
@@ -2699,6 +2724,7 @@ devm_led_classdev_unregister	UNKNOWN
 devm_mbox_controller_register	UNKNOWN	
 devm_mdiobus_alloc_size	UNKNOWN	
 devm_memremap	UNKNOWN	
+devm_memremap_pages	UNKNOWN	
 devm_memunmap	UNKNOWN	
 devm_mfd_add_devices	UNKNOWN	
 devm_mipi_dsi_attach	UNKNOWN	
@@ -2973,11 +2999,13 @@ drm_aperture_remove_conflicting_pci_framebuffers	UNKNOWN
 drm_atomic_add_affected_connectors	UNKNOWN	
 drm_atomic_add_affected_planes	UNKNOWN	
 drm_atomic_add_encoder_bridges	UNKNOWN	
+drm_atomic_bridge_chain_check	UNKNOWN	
 drm_atomic_bridge_chain_disable	UNKNOWN	
 drm_atomic_bridge_chain_enable	UNKNOWN	
 drm_atomic_bridge_chain_post_disable	UNKNOWN	
 drm_atomic_bridge_chain_pre_enable	UNKNOWN	
 drm_atomic_commit	UNKNOWN	
+drm_atomic_get_bridge_state	UNKNOWN	
 drm_atomic_get_connector_state	UNKNOWN	
 drm_atomic_get_crtc_state	UNKNOWN	
 drm_atomic_get_new_bridge_state	UNKNOWN	
@@ -3549,6 +3577,7 @@ filemap_fdatawait_keep_errors	UNKNOWN
 filemap_fdatawait_range	UNKNOWN	
 filemap_fdatawrite	UNKNOWN	
 filemap_fdatawrite_range	UNKNOWN	
+filemap_fdatawrite_wbc	UNKNOWN	
 filemap_flush	UNKNOWN	
 filemap_get_folios	UNKNOWN	
 filemap_map_pages	UNKNOWN	
@@ -3607,6 +3636,7 @@ frame_vector_create	UNKNOWN
 frame_vector_destroy	UNKNOWN	
 frame_vector_to_pages	UNKNOWN	
 frame_vector_to_pfns	UNKNOWN	
+free_buffer_head	UNKNOWN	
 free_candev	UNKNOWN	
 free_contig_range	UNKNOWN	
 free_io_pgtable_ops	UNKNOWN	
@@ -3843,7 +3873,9 @@ gic_v3_cpu_init	UNKNOWN
 gic_v3_dist_init	UNKNOWN	
 gic_v3_dist_wait_for_rwp	UNKNOWN	
 glob_match	UNKNOWN	
+gnet_stats_add_basic	UNKNOWN	
 gnet_stats_add_queue	UNKNOWN	
+gnet_stats_basic_sync_init	UNKNOWN	
 gnet_stats_copy_basic	UNKNOWN	
 gnet_stats_copy_queue	UNKNOWN	
 gov_attr_set_get	UNKNOWN	
@@ -4154,6 +4186,9 @@ iio_device_free	UNKNOWN
 iio_device_id	UNKNOWN	
 iio_device_release_direct_mode	UNKNOWN	
 iio_device_unregister	UNKNOWN	
+iio_enum_available_read	UNKNOWN	
+iio_enum_read	UNKNOWN	
+iio_enum_write	UNKNOWN	
 iio_format_value	UNKNOWN	
 iio_get_channel_type	UNKNOWN	
 iio_get_time_ns	UNKNOWN	
@@ -4953,6 +4988,7 @@ mount_bdev	UNKNOWN
 mpage_read_folio	UNKNOWN	
 mpage_readahead	UNKNOWN	
 mpage_writepages	UNKNOWN	
+mq_change_real_num_tx	UNKNOWN	
 msi_first_desc	UNKNOWN	
 msi_get_virq	UNKNOWN	
 msi_next_desc	UNKNOWN	
@@ -5016,6 +5052,7 @@ netdev_set_default_ethtool_ops	UNKNOWN
 netdev_set_num_tc	UNKNOWN	
 netdev_set_tc_queue	UNKNOWN	
 netdev_state_change	UNKNOWN	
+netdev_txq_to_tc	UNKNOWN	
 netdev_update_features	UNKNOWN	
 netdev_upper_dev_link	UNKNOWN	
 netdev_upper_dev_unlink	UNKNOWN	
@@ -5533,6 +5570,7 @@ perf_pmu_register	UNKNOWN
 perf_pmu_unregister	UNKNOWN	
 perf_trace_buf_alloc	UNKNOWN	
 perf_trace_run_bpf_submit	UNKNOWN	
+pfifo_fast_ops	UNKNOWN	
 pfifo_qdisc_ops	UNKNOWN	
 pfn_is_map_memory	UNKNOWN	
 phy_attach	UNKNOWN	
@@ -5779,6 +5817,10 @@ policy_has_boost_freq	UNKNOWN
 poll_state_synchronize_rcu	UNKNOWN	
 poll_state_synchronize_srcu	UNKNOWN	
 posix_acl_chmod	UNKNOWN	
+posix_acl_equiv_mode	UNKNOWN	
+posix_acl_from_xattr	UNKNOWN	
+posix_acl_to_xattr	UNKNOWN	
+posix_acl_valid	UNKNOWN	
 posix_lock_file	UNKNOWN	
 posix_test_lock	UNKNOWN	
 post_page_relinquish_tlb_inv	UNKNOWN	
@@ -5922,6 +5964,7 @@ qdisc_reset	UNKNOWN
 qdisc_tree_reduce_backlog	UNKNOWN	
 qdisc_watchdog_cancel	UNKNOWN	
 qdisc_watchdog_init	UNKNOWN	
+qdisc_watchdog_init_clockid	UNKNOWN	
 qdisc_watchdog_schedule_range_ns	UNKNOWN	
 queue_delayed_work_on	UNKNOWN	
 queue_work_on	UNKNOWN	
@@ -6235,6 +6278,7 @@ rproc_coredump_set_elf_info	UNKNOWN
 rproc_coredump_using_sections	UNKNOWN	
 rproc_da_to_va	UNKNOWN	
 rproc_del	UNKNOWN	
+rproc_detach	UNKNOWN	
 rproc_elf_find_loaded_rsc_table	UNKNOWN	
 rproc_elf_get_boot_addr	UNKNOWN	
 rproc_elf_load_rsc_table	UNKNOWN	
@@ -6273,6 +6317,7 @@ rtc_valid_tm	UNKNOWN
 rtnl_configure_link	UNKNOWN	
 rtnl_create_link	UNKNOWN	
 rtnl_is_locked	UNKNOWN	
+rtnl_kfree_skbs	UNKNOWN	
 rtnl_link_register	UNKNOWN	
 rtnl_link_unregister	UNKNOWN	
 rtnl_lock	UNKNOWN	
@@ -6506,6 +6551,7 @@ serio_unregister_port	UNKNOWN
 set_anon_super	UNKNOWN	
 set_bh_page	UNKNOWN	
 set_blocksize	UNKNOWN	
+set_cached_acl	UNKNOWN	
 set_capacity	UNKNOWN	
 set_capacity_and_notify	UNKNOWN	
 set_cpus_allowed_ptr	UNKNOWN	
@@ -6559,6 +6605,7 @@ show_rcu_gp_kthreads	UNKNOWN
 show_rcu_tasks_classic_gp_kthread	UNKNOWN	
 show_rcu_tasks_trace_gp_kthread	UNKNOWN	
 show_regs	UNKNOWN	
+shrink_dcache_sb	UNKNOWN	
 shrink_slab	UNKNOWN	
 si_mem_available	UNKNOWN	
 si_meminfo	UNKNOWN	
@@ -6666,6 +6713,7 @@ snapshot_get_image_size	UNKNOWN
 snd_card_add_dev_attr	UNKNOWN	
 snd_card_free	UNKNOWN	
 snd_card_new	UNKNOWN	
+snd_card_ref	UNKNOWN	
 snd_card_register	UNKNOWN	
 snd_compr_malloc_pages	UNKNOWN	
 snd_compr_stop_error	UNKNOWN	
@@ -6711,6 +6759,7 @@ snd_pcm_fill_iec958_consumer_hw_params	UNKNOWN
 snd_pcm_format_big_endian	UNKNOWN	
 snd_pcm_format_linear	UNKNOWN	
 snd_pcm_format_physical_width	UNKNOWN	
+snd_pcm_format_set_silence	UNKNOWN	
 snd_pcm_format_size	UNKNOWN	
 snd_pcm_format_unsigned	UNKNOWN	
 snd_pcm_format_width	UNKNOWN	
@@ -6922,6 +6971,7 @@ sock_no_sendmsg	UNKNOWN
 sock_no_sendpage	UNKNOWN	
 sock_no_shutdown	UNKNOWN	
 sock_no_socketpair	UNKNOWN	
+sock_queue_err_skb	UNKNOWN	
 sock_queue_rcv_skb_reason	UNKNOWN	
 sock_recv_errqueue	UNKNOWN	
 sock_recvmsg	UNKNOWN	
@@ -7057,6 +7107,7 @@ sync_file_create	UNKNOWN
 sync_file_get_fence	UNKNOWN	
 sync_filesystem	UNKNOWN	
 sync_inode_metadata	UNKNOWN	
+sync_inodes_sb	UNKNOWN	
 sync_mapping_buffers	UNKNOWN	
 synchronize_irq	UNKNOWN	
 synchronize_net	UNKNOWN	
@@ -7158,6 +7209,7 @@ tcf_idrinfo_destroy	UNKNOWN
 tcf_queue_work	UNKNOWN	
 tcf_register_action	UNKNOWN	
 tcf_unregister_action	UNKNOWN	
+tcp_cong_avoid_ai	UNKNOWN	
 tcp_done	UNKNOWN	
 tcp_hashinfo	UNKNOWN	
 tcp_register_congestion_control	UNKNOWN	
@@ -7330,6 +7382,7 @@ ttm_tt_fini	UNKNOWN
 ttm_tt_unpopulate	UNKNOWN	
 tty_buffer_request_room	UNKNOWN	
 tty_buffer_set_limit	UNKNOWN	
+tty_buffer_space_avail	UNKNOWN	
 tty_chars_in_buffer	UNKNOWN	
 tty_dev_name_to_number	UNKNOWN	
 tty_driver_flush_buffer	UNKNOWN	
@@ -7386,6 +7439,9 @@ tty_unthrottle	UNKNOWN
 tty_vhangup	UNKNOWN	
 tty_wakeup	UNKNOWN	
 tty_write_room	UNKNOWN	
+tun_get_socket	UNKNOWN	
+tun_get_tx_ring	UNKNOWN	
+tun_ptr_free	UNKNOWN	
 typec_altmode_attention	UNKNOWN	
 typec_altmode_notify	UNKNOWN	
 typec_altmode_update_active	UNKNOWN	
@@ -8150,6 +8206,7 @@ vzalloc_node	UNKNOWN
 wait_for_completion	UNKNOWN	
 wait_for_completion_interruptible	UNKNOWN	
 wait_for_completion_interruptible_timeout	UNKNOWN	
+wait_for_completion_io	UNKNOWN	
 wait_for_completion_io_timeout	UNKNOWN	
 wait_for_completion_killable	UNKNOWN	
 wait_for_completion_killable_timeout	UNKNOWN	
@@ -8191,6 +8248,7 @@ wpan_phy_new	UNKNOWN
 wpan_phy_register	UNKNOWN	
 wpan_phy_unregister	UNKNOWN	
 wq_worker_comm	UNKNOWN	
+write_dirty_buffer	UNKNOWN	
 write_inode_now	UNKNOWN	
 ww_mutex_lock	UNKNOWN	
 ww_mutex_lock_interruptible	UNKNOWN	
@@ -8284,6 +8342,7 @@ xt_request_find_target	UNKNOWN
 xt_unregister_match	UNKNOWN	
 xt_unregister_target	UNKNOWN	
 xt_unregister_targets	UNKNOWN	
+yield	UNKNOWN	
 zap_vma_ptes	UNKNOWN	
 zero_pfn	UNKNOWN	
 zlib_deflate	UNKNOWN	
