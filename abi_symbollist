@@ -1017,6 +1017,7 @@
   iio_enum_available_read
   iio_enum_read
   iio_enum_write
+  iio_get_channel_type
   iio_get_time_ns
   iio_pollfunc_store_time
   iio_push_event
@@ -3046,6 +3047,7 @@
   phy_ethtool_nway_reset
   phy_ethtool_set_eee
   phy_ethtool_set_link_ksettings
+  phy_ethtool_set_wol
   phy_exit
   phy_init
   phy_init_eee
@@ -3441,6 +3443,9 @@
 # required by bcm7038_wdt.ko
   devm_watchdog_register_device
 
+# required by bcm74110-rng.ko
+  devm_hwrng_register
+
 # required by bcm7xxx.ko
   genphy_restart_aneg
 
@@ -3505,23 +3510,6 @@
   of_find_net_device_by_node
   of_find_node_by_phandle
 
-# required by brcmstb-iommu.ko
-  devm_get_free_pages
-  generic_device_group
-  iommu_device_register
-  iommu_device_sysfs_add
-  iommu_device_sysfs_remove
-  iommu_device_unlink
-  iommu_device_unregister
-  iommu_fwspec_init
-  iommu_group_alloc
-  iommu_group_put
-  iommu_group_ref_get
-  iommu_group_set_name
-  pci_device_group
-  pci_find_host_bridge
-  platform_get_irq_byname
-
 # required by brcmstb-proc-info.ko
   find_get_pid
   generic_file_open
@@ -3539,6 +3527,21 @@
 # required by brcmstb_gisb.ko
   __sw_hweight64
 
+# required by brcmstb_iommu.ko
+  devm_get_free_pages
+  iommu_device_register
+  iommu_device_sysfs_add
+  iommu_device_sysfs_remove
+  iommu_device_unlink
+  iommu_device_unregister
+  iommu_fwspec_init
+  iommu_group_alloc
+  iommu_group_put
+  iommu_group_ref_get
+  pci_device_group
+  pci_find_host_bridge
+  platform_get_irq_byname
+
 # required by brcmstb_memc.ko
   of_match_device
 
@@ -3547,9 +3550,6 @@
   genphy_c37_config_aneg
   genphy_c37_read_status
   genphy_suspend
-
-# required by btbcm.ko
-  efi
 
 # required by btsdio.ko
   sdio_claim_host
@@ -3722,7 +3722,6 @@
   phy_connect_direct
   phy_ethtool_ksettings_get
   phy_ethtool_ksettings_set
-  phy_ethtool_set_wol
   phy_get_pause
   phy_init_hw
   phy_resume
@@ -4060,10 +4059,12 @@
   bitmap_find_free_region
   bitmap_release_region
   devm_pci_alloc_host_bridge
+  devm_phy_optional_get
   irq_chip_ack_parent
   irq_domain_get_irq_data
   irq_domain_set_info
   of_pci_get_max_link_speed
+  of_property_read_variable_u16_array
   of_property_read_variable_u64_array
   pcie_link_speed
   pci_generic_config_read
@@ -4086,6 +4087,12 @@
 
 # required by phy-brcm-sata.ko
   of_phy_simple_xlate
+
+# required by phy-brcm-pcie.ko
+  __copy_overflow
+  debugfs_initialized
+  regmap_read
+  strsep
 
 # required by phy-brcm-usb-dvr.ko
   brcmstb_get_family_id
@@ -4401,6 +4408,11 @@
 # required by nexusmem.ko
   restore_online_page_callback
   __alloc_pages_bulk
+  __rt_mutex_init
+  rt_mutex_lock
+  rt_mutex_trylock
+  rt_mutex_unlock
+  rt_mutex_lock_interruptible
 
 # required by nexus.ko
   recalc_sigpending
@@ -11478,6 +11490,7 @@
   smpboot_register_percpu_thread
   smpboot_unregister_percpu_thread
   snd_card_ref
+  snd_ctl_remove_id
   snd_soc_add_card_controls
   snd_soc_find_dai
   snd_soc_info_volsw_sx
@@ -11774,6 +11787,8 @@
  __tracepoint_rpm_resume
  __traceiter_rpm_return_int
  __tracepoint_rpm_return_int
+ __traceiter_android_vh_count_workingset_refault
+ __tracepoint_android_vh_count_workingset_refault
  binder_alloc_copy_from_buffer
  kfree
  __kmalloc
@@ -14722,6 +14737,7 @@
   device_create_with_groups
   device_del
   device_destroy
+  device_find_any_child
   device_find_child
   device_find_child_by_name
   device_for_each_child
@@ -14837,6 +14853,7 @@
   devm_memremap_pages
   devm_mfd_add_devices
   devm_nvmem_cell_get
+  devm_nvmem_cell_put
   devm_nvmem_device_get
   devm_nvmem_register
   devm_of_icc_get
@@ -15336,6 +15353,7 @@
   fsg_common_set_inquiry_string
   fsg_common_set_sysfs
   fsg_config_from_params
+  fw_devlink_purge_absent_suppliers
   fwnode_device_is_available
   fwnode_get_name
   fwnode_get_named_child_node
@@ -15459,6 +15477,7 @@
   handle_sysrq
   have_governor_per_policy
   hci_cmd_sync_status
+  hdmi_audio_infoframe_pack_for_dp
   hex2bin
   hex_asc
   hex_asc_upper
@@ -16027,7 +16046,14 @@
   net_selftest_get_count
   net_selftest_get_strings
   nf_conntrack_destroy
+  nfnetlink_subsys_register
+  nfnetlink_subsys_unregister
+  nfnetlink_unicast
+  nfnl_lock
+  nfnl_unlock
   nf_register_net_hooks
+  nf_sk_lookup_slow_v4
+  nf_sk_lookup_slow_v6
   nf_unregister_net_hooks
   nla_find
   nla_memcpy
@@ -17417,6 +17443,7 @@
   typec_partner_set_identity
   typec_partner_set_pd_revision
   typec_partner_set_svdm_version
+  typec_port_register_altmodes
   typec_register_partner
   typec_register_port
   typec_set_data_role
@@ -17525,6 +17552,7 @@
   usb_autopm_put_interface
   usb_autopm_put_interface_async
   usb_check_bulk_endpoints
+  usb_check_int_endpoints
   usb_clear_halt
   usb_composite_probe
   usb_composite_unregister
@@ -17876,6 +17904,8 @@
   xsk_tx_peek_desc
   xsk_tx_release
   xsk_uses_need_wakeup
+  xt_register_matches
+  xt_unregister_matches
   zlib_deflate
   zlib_deflateEnd
   zlib_deflateInit2
@@ -18151,6 +18181,7 @@
   have_governor_per_policy
   i2c_smbus_read_word_data
   i2c_smbus_write_word_data
+  __icmp_send
   iio_channel_get
   iio_channel_release
   iio_get_channel_type
@@ -18619,10 +18650,12 @@
   blk_mq_free_request
   blk_mq_free_tag_set
   blk_mq_map_queues
+  blk_mq_quiesce_queue
   blk_mq_start_request
   blk_mq_start_stopped_hw_queues
   blk_mq_stop_hw_queues
   blk_mq_unique_tag
+  blk_mq_unquiesce_queue
   blk_mq_update_nr_hw_queues
   blk_op_str
   blk_queue_chunk_sectors
@@ -18799,6 +18832,7 @@
   __cpu_present_mask
   cpupri_find_fitness
   cpu_scale
+  cpuset_cpus_allowed
   cpus_read_lock
   cpus_read_unlock
   cpu_subsys
@@ -19872,6 +19906,8 @@
   log_threaded_irq_wakeup_reason
   log_write_mmio
   loops_per_jiffy
+  lru_cache_disable
+  lru_disable_count
   mac_pton
   mas_empty_area_rev
   mas_find
@@ -20473,6 +20509,7 @@
   rtnl_trylock
   rtnl_unlock
   runqueues
+  sbitmap_weight
   sched_clock
   sched_feat_keys
   sched_setattr_nocheck
@@ -20812,6 +20849,7 @@
   tasklet_setup
   tasklet_unlock_wait
   __task_pid_nr_ns
+  __task_rq_lock
   task_rq_lock
   tcpci_get_tcpm_port
   tcpci_irq
@@ -20912,6 +20950,7 @@
   __traceiter_android_rvh_util_fits_cpu
   __traceiter_android_rvh_vmscan_kswapd_done
   __traceiter_android_rvh_vmscan_kswapd_wake
+  __traceiter_android_trigger_vendor_lmk_kill
   __traceiter_android_vh_arch_set_freq_scale
   __traceiter_android_vh_audio_usb_offload_connect
   __traceiter_android_vh_binder_proc_transaction_finish
@@ -20960,6 +20999,7 @@
   __traceiter_android_vh_usb_dev_resume
   __traceiter_android_vh_use_amu_fie
   __traceiter_android_vh_vmscan_kswapd_done
+  __traceiter_android_vh_calculate_totalreserve_pages
   __traceiter_clock_set_rate
   __traceiter_cma_alloc_finish
   __traceiter_cma_alloc_start
@@ -21051,6 +21091,7 @@
   __tracepoint_android_rvh_util_fits_cpu
   __tracepoint_android_rvh_vmscan_kswapd_done
   __tracepoint_android_rvh_vmscan_kswapd_wake
+  __tracepoint_android_trigger_vendor_lmk_kill
   __tracepoint_android_vh_arch_set_freq_scale
   __tracepoint_android_vh_audio_usb_offload_connect
   __tracepoint_android_vh_binder_proc_transaction_finish
@@ -21099,6 +21140,7 @@
   __tracepoint_android_vh_usb_dev_resume
   __tracepoint_android_vh_use_amu_fie
   __tracepoint_android_vh_vmscan_kswapd_done
+  __tracepoint_android_vh_calculate_totalreserve_pages
   __tracepoint_clock_set_rate
   __tracepoint_cma_alloc_finish
   __tracepoint_cma_alloc_start
@@ -23691,6 +23733,7 @@
   of_thermal_get_trip_points
   of_thermal_is_trip_valid
   of_translate_address
+  of_update_property
   on_each_cpu_cond_mask
   oops_in_progress
   open_candev
@@ -24963,6 +25006,7 @@
   __traceiter_android_vh_ufs_send_uic_command
   __traceiter_android_vh_ufs_update_sdev
   __traceiter_android_vh_update_topology_flags_workfn
+  __traceiter_android_vh_vprintk_store
   __traceiter_binder_transaction_received
   __traceiter_cpu_frequency_limits
   __traceiter_cpu_idle
@@ -25116,6 +25160,7 @@
   __tracepoint_android_vh_ufs_send_uic_command
   __tracepoint_android_vh_ufs_update_sdev
   __tracepoint_android_vh_update_topology_flags_workfn
+  __tracepoint_android_vh_vprintk_store
   __tracepoint_binder_transaction_received
   __tracepoint_cpu_frequency_limits
   __tracepoint_cpu_idle
@@ -25505,6 +25550,7 @@
   virtqueue_get_buf_ctx
   virtqueue_get_desc_addr
   virtqueue_get_used_addr
+  virtqueue_get_vring
   virtqueue_get_vring_size
   virtqueue_is_broken
   virtqueue_kick
@@ -25587,6 +25633,7 @@
   __xa_insert
   xa_load
   xa_store
+  xas_load
   xdp_convert_zc_to_xdp_frame
   xdp_do_flush
   xdp_do_redirect
@@ -28147,6 +28194,7 @@
   __drm_atomic_state_free
   drm_bridge_chain_mode_set
   drm_bridge_get_edid
+  drm_bridge_is_panel
   drm_connector_list_update
   drm_crtc_cleanup
   drm_crtc_enable_color_mgmt
@@ -28170,6 +28218,7 @@
   drm_flip_work_init
   drm_flip_work_queue
   drm_format_info
+  drm_format_info_bpp
   drm_format_info_min_pitch
   drm_framebuffer_cleanup
   drm_framebuffer_init
@@ -28192,7 +28241,9 @@
   drm_kms_helper_poll_init
   drm_mm_init
   drm_mm_insert_node_in_range
+  drmm_of_get_bridge
   drmm_mode_config_init
+  drmm_panel_bridge_add
   drm_mm_print
   drm_mm_remove_node
   drm_mm_reserve_node
@@ -28216,6 +28267,7 @@
   drm_mode_validate_ycbcr420
   drm_of_crtc_port_mask
   drm_of_encoder_active_endpoint
+  drm_panel_bridge_set_orientation
   drm_plane_cleanup
   drm_plane_create_alpha_property
   drm_plane_create_blend_mode_property
@@ -33860,6 +33912,7 @@
   drm_atomic_helper_dirtyfb
   drm_atomic_helper_plane_destroy_state
   drm_atomic_helper_plane_duplicate_state
+  __drm_atomic_helper_plane_duplicate_state
   drm_atomic_helper_plane_reset
   drm_connector_attach_edid_property
   drm_connector_register
@@ -39816,6 +39869,21 @@
 #required by zram.ko
   bioset_init
   bioset_exit
+  bio_crypt_set_ctx
+  blk_crypto_evict_key
+  blk_crypto_init_key
+  blk_crypto_start_using_key
+  mem_cgroup_move_account
+  cgroup_rm_cftypes
+  __traceiter_android_vh_mem_cgroup_charge
+  __traceiter_android_vh_filemap_add_folio
+  __traceiter_android_vh_shrink_node
+  __tracepoint_android_vh_mem_cgroup_charge
+  __tracepoint_android_vh_filemap_add_folio
+  __tracepoint_android_vh_shrink_node
+  __alloc_pages_bulk
+  __xa_cmpxchg
+  lookup_user_key
 
 #required by mi_asap.ko
   __traceiter_android_vh_read_pages
@@ -39847,6 +39915,14 @@
 
 # required by shrink memory module
   shrink_slab
+
+# required by mi_mem_engine.ko
+  __traceiter_android_vh_tune_swappiness
+  __tracepoint_android_vh_tune_swappiness
+  __traceiter_android_vh_do_shrink_slab_ex
+  __tracepoint_android_vh_do_shrink_slab_ex
+  __traceiter_android_vh_shrink_slab_bypass
+  __tracepoint_android_vh_shrink_slab_bypass
 
 #required by cifs.ko
   add_swap_extent
@@ -39940,6 +40016,9 @@ __tracepoint_android_vh_page_should_be_protected
 __traceiter_android_vh_page_referenced_check_bypass
 __tracepoint_android_vh_page_referenced_check_bypass
 __page_mapcount
+folio_mapcount
+__traceiter_android_vh_folio_referenced_check_bypass
+__tracepoint_android_vh_folio_referenced_check_bypass
 
 #required by mi_async_reclaim.ko
 __traceiter_android_vh_handle_trylock_failed_folio
@@ -39953,4 +40032,47 @@ __tracepoint_android_vh_get_folio_trylock_result
 __traceiter_android_vh_do_folio_trylock
 __tracepoint_android_vh_do_folio_trylock
 reclaim_pages
+
+#required by mi_iod_debug.ko
+page_swap_info
+
+# required by launch_boost driver
+__traceiter_android_vh_filemap_read
+__tracepoint_android_vh_filemap_read
+__traceiter_android_vh_filemap_map_pages_range
+__tracepoint_android_vh_filemap_map_pages_range
+
+#required by rtase.ko
+proc_get_parent_data
+netdev_stats_to_stats64
+
+[abi_symbol_list]
+
+#required by pegasus.ko
+  mii_nway_restart
+  mii_link_ok
+  mii_ethtool_get_link_ksettings
+  mii_ethtool_set_link_ksettings
+
+#required by susc95xx.ko
+  usbnet_get_endpoints
+  usbnet_write_cmd
+  usbnet_write_cmd_nopm
+  usbnet_read_cmd
+  usbnet_read_cmd_nopm
+  usbnet_open
+  usbnet_stop
+  usbnet_start_xmit
+  usbnet_change_mtu
+  usbnet_tx_timeout
+  usbnet_write_cmd_async
+  usbnet_get_drvinfo
+  usbnet_get_msglevel
+  usbnet_set_msglevel
+  usbnet_defer_kevent
+  usbnet_skb_return
+  usbnet_probe
+  usbnet_disconnect
+  usbnet_suspend
+  usbnet_resume
 
